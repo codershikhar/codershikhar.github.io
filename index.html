@@ -1,11 +1,157 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="htmlBootstrap.aspx.cs" Inherits="htmlBootstrap" %>
 
-<html>
-<body>
-<center>
-<H1> Team Quad Core <H1>
-<H2> Website Under Construction <H2>
-<iframe src="http://free.timeanddate.com/countdown/i5liq9yc/cf12/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000/cpc000/pcfff/tcfff/fs100/szw448/szh189/tatTime%20left%20/tac000/tptTime%20left/tpc000/mac000/mpc000/iso2017-02-22T00:00:00/bo3" allowTransparency="true" frameborder="0" width="160" height="93"></iframe>
-<H1>Diksha is a SUCKS...</H1>
-</center>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equi="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TeamQuadcore</title>
+    <link rel="stylesheet" type="text/css" href="cssFile3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js1.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body id="CoverPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#CoverPage"><img class="navbar-logo" src="images/logofinal2.png" /></a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#CoverPage">Home</a></li>
+                    <li><a href="#OurProduct">Our Product</a></li>
+                    <li><a href="#FutureExpansions">Future Expansions</a></li>
+                    <li><a href="#AboutUs">About Us</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="HomePage">
+        <p class="headerPara">
+            <h1 style="text-align:left; padding-left:50px; color:white;">BRIDGING THE GAP BETWEEN PEOPLE</h1>
+            <h2 style="text-align:left; padding-left:50px; color:white;">A glove which converts hand gestures to speech</h2>
+        </p>
+    </div>
+
+    <!-- Our Product-->
+
+    <div class="product" id="OurProduct">
+        <h1>Our Product</h1>
+        <p class="paragraph">
+            <b style="color:darkkhaki;">SIGMA</b> is a wearable gadget which interprets hand gstures. It can find a variety of applications in various fields. Our main objective of designing this glove started as an attempt to help those lacking the sense of hearing and ability to speak.
+        </p>
+    </div>
+
+
+    <!-- future expansions -->
+    <div class="futureExpansions" id="FutureExpansions">
+        <h1 class="carouselHeader">Future Expansions</h1>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- wrapper for slides-->
+            <div class="carousel-inner overlay" role="listbox">
+                <div class="item active" style="background-image: url(http://localhost:62301/images/game2.jpg); background-position:center left top;">
+                    <div class="carousel-caption">
+                        <h2 style="text"><b>Gaming Console</b></h2>
+                        <p class="carouselPara">This glove can be used to play games by acting as game controller giving a realistic feel</p>
+                    </div>
+                </div>
+                <div class="item" style="background-image:url(http://localhost:62301/images/3dmodelling2.jpg);background-position:center;">
+                    <div class="carousel-caption">
+                        <h2>3D Modelling</h2>
+                        <p class="carouselPara">This glove can be used for 3D modelling</p>
+                    </div>
+                </div>
+                <div class="item" style="background-image:url(http://localhost:62301/images/homeAutomation1.jpg);background-position:center;">
+                    <div class="carousel-caption">
+                        <h2>Home Automation</h2>
+                        <p class="carouselPara">Control home appliances sitting at one place using glove</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- left and right controls-->
+            <a class="carousel-control left" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-menu-left carouselGlyphicon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-menu-right carouselGlyphicon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- About us-->
+
+    <div class="aboutUs" id="AboutUs">
+        <h1 style="padding-bottom:50px;">About Us</h1>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3"><img src="images/Shikhar.jpg" class="teamMembers-img-circle" /><p class="nameStyle"><b>Shikhar Agrawal</b></p><p class="teamMembersPara">Speciality: Machine Learnig</p></div>
+                <div class="col-sm-3"><img src="images/Diksha.jpg" class="teamMembers-img-circle" /><p class="nameStyle"><b>Diksha Rajmane</b></p><p class="teamMembersPara">Speciality: Web development</p></div>
+                <div class="col-sm-3"><img src="images/photo.jpg" class="teamMembers-img-circle" /><p class="nameStyle"><b>Ketan Bedarkar</b></p><p class="teamMembersPara">Speciality: Android Development</p></div>
+                <div class="col-sm-3"><img src="images/photo.jpg" class="teamMembers-img-circle" /><p class="nameStyle"><b>Shweta Misra</b></p><p class="teamMembersPara">Speciality: Data Mining</p></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+
+    <div class="contactpage" id="Contact">
+        <h1>Contact Us</h1>
+        <form name="contactForm" action="phpFile3.php" method="post">
+            <table class="contactTable">
+                <tr class="contactRow">
+                    <td class="contactSideColumn"></td>
+                    <td class="contactCenterColumn">
+                        <p>
+                            <i class="glyphicon glyphicon-user" aria-hidden="true"></i><br />
+                            <input class="textboxes" name="first_last_name" placeholder="FirstName-LastName" />
+                        </p>
+                        <p>
+                            <label><i class="glyphicon glyphicon-envelope"></i></label><br />
+                            <input class="textboxes" name="email" placeholder="email@email.com" />
+                        </p>
+                        <p>
+                            <label><i class="glyphicon glyphicon-comment"></i></label><br />
+                            <textarea class="textboxes" name="message" placeholder="Message"></textarea>
+                        </p><br />
+                        <input class="submitButton" name="submit" type="submit" value="Submit" />
+                    </td>
+                    <td class="contactSideColumn>"></td>
+                </tr>
+            </table>
+        </form>
+        <h3 style="padding-top:0px;">Please feel free to contact us</h3>
+    </div>
+    <footer class="footer">
+        <ul class="socialLinks">
+            <li><a href="https://www.facebook.com"><i class="fa fa-facebook-square" style="font-size:32px;"></i></a></li>
+            <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin-square" style="font-size:32px;"></i></a></li>
+            <li><a href="https://www.twitter.com"><i class="fa fa-twitter-square" style="font-size:32px;"></i></a></li>
+            <p class="footerPara">&copy Quadcorepro.com</p>
+        </ul>
+    </footer>
 </body>
 </html>
